@@ -136,23 +136,27 @@
 
     <!-- BARRE D'ÉCOUTE -->
 
-    <figure id="audioplayer" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">
-      <!-- <figcaption>
-        <div>Track<span itemprop="name">24 Ghosts III</span></div>
-        <div id="album">Album<span itemprop="inAlbum">Ghosts III</span></div>
-        <div id="artist">Artist<span itemprop="byArtist">Nine Inch Nails</span></div>
-        <div id="time">Time<span id="playbacktime">00:00</span></div>
-      </figcaption> -->
-      <meta itemprop="duration" content="PT2M29S">
-      <div id="fader"></div>
-      <div id="playback"></div>
-      <audio controls src="https://thenewcode.com/assets/audio/24-ghosts-III.mp3" id="audiotrack" preload="auto"
-        itemprop="audio"></audio>
-    </figure>
+<div class="container-fluid">
+  <audio id="lecteur" class="row">
+    <div class="col d-flex justify-content-center align-items-center">
+        <div><i class="fas fa-play"></i></div>
+        <div><i class="fas fa-pause"></i></div>
+        <div><i class="fas fa-pause"></i></div>
+        <div><i class="fas fa-fast-forward"></i></div>
+        <div><i class="	fas fa-fast-backward"></i></div>
+    </div>
+  </audio>
+</div>
+
 
 
 
   </div>
+
+
+
+
+
   <script src="script.js"></script>
 </body>
 
