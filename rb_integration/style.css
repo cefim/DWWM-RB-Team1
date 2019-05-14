@@ -1,3 +1,8 @@
+body {
+  padding-bottom: 170px;
+}
+
+
 .hero {
   position: relative;
 }
@@ -36,11 +41,19 @@ h3:hover {
   text-decoration: none;
 }
 
+/* CSS BARRE D'ÉCOUTE */
 
-.barre_son {
-  background-color : grey;
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display : table-row;
+    height: 220px; /* à titre d'exemple */
+    background-color :black;
 }
 
-
-/* CSS BARRE D'ÉCOUTE */
+.icon {
+  color: white;
+}
 
