@@ -55,6 +55,7 @@
           <img class="img-fluid" src="img/logo.png" alt="naturelle">
       </ul>
     </header>
+
     <!-- SOUS-TITRE -->
 
     <section>
@@ -124,15 +125,19 @@
 
 
       <div class="container-fluid my-5">
-        <div class="row d-flex flex-column align-items-center justify-content-center">
-          <div class="col-sm-2 pt-3">
-            <img class="img-fluid" src="img/sam.png" alt="naturelle">
-          </div>
-          <div id="searchthis" class="col pt-3 d-flex justify-content-center mb-5">
+        <div class="container">
+          <div class="row d-flex flex-column align-items-center justify-content-center">
+            <div class="col-sm-2 pt-3">
+              <img class="img-fluid" src="img/sam.png" alt="naturelle">
+            </div>
+            <div id="searchthis" class="col pb-3 d-flex justify-content-center mb-5">
               <form action="/search" method="get">
-              <input id="search" name="q" type="text" placeholder="Tell me what you want !" />
-              <input id="search-btn" type="submit" value="Try or die" />
+                <input id="search" class="col-12" name="q" type="text" placeholder="Tell me what you want !" />
+                <input id="search-btn" type="submit" value="Try or die" />
               </form>
+            </div>
+            <div id="space" class="col-sm-2 pt-3">
+            </div>
           </div>
         </div>
       </div>
@@ -140,15 +145,14 @@
 
     <!-- BARRE D'ÉCOUTE -->
 
-
     <footer>
       <div class="container-fluid d-inline-flex barre_son">
         <div class="container">
-          <div class="row d-flex">
+          <div class="row d-flex flex-wrap">
             <div class="col-3">
               <img src="img/rock.jpeg" alt="naturelle">
             </div>
-            <div class="audio col d-flex justify-content-center align-items-center ">
+            <div class="audio col d-flex justify-content-center align-items-center ">           
               <!-- <audio id="lecteur"></audio> -->
               <div class="col-3">
                 <i class="fas fa-fast-backward icon" onclick="document.getElementById('lecteur').backward();"></i>
