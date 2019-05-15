@@ -22,6 +22,7 @@
 
 <body>
   <div class="hero">
+
     <!-- BANDEAU -->
 
     <header>
@@ -118,13 +119,13 @@
 
         </div>
       </div>
-
+    </section>
 
       <!-- BARRE DE RECHERCHE -->
 
 
 
-      <div class="container-fluid my-5">
+      <div class="container-fluid" style="padding-bottom: 250px;">
         <div class="container">
           <div class="row d-flex flex-column align-items-center justify-content-center">
             <div class="col-sm-2 pt-3">
@@ -136,53 +137,29 @@
                 <input id="search-btn" type="submit" value="Try or die" />
               </form>
             </div>
-            <div id="space" class="col-sm-2 pt-3">
-            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- BARRE D'ÉCOUTE -->
-
-    <footer>
-      <div class="container-fluid d-inline-flex barre_son">
-        <div class="container">
-          <div class="row d-flex flex-wrap">
-            <div class="col-3">
-              <img src="img/rock.jpeg" alt="naturelle">
-            </div>
-            <div class="audio col d-flex justify-content-center align-items-center ">           
-              <!-- <audio id="lecteur"></audio> -->
-              <div class="col-3">
-                <i class="fas fa-fast-backward icon" onclick="document.getElementById('lecteur').backward();"></i>
-              </div>
-              <div class="col-3">
-                <i class="fas fa-play icon" onclick="document.getElementById('lecteur').play();"></i></div>
-              <div class="col-3">
-                <i class="fas fa-fast-forward icon" onclick="document.getElementById('lecteur').forward();"></i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
 
   </div>
+  <!-- BARRE D'ÉCOUTE -->
 
-  <script src="script.js"></script>
+  <footer>
+    <div class="container-fluid d-inline-flex barre_son">
+      <!-- <div class="container"> -->
+      <!-- <div class="row d-flex flex-wrap"> -->
+      <div class="col-sm-2">
+        <img src="img/rock.jpeg" alt="naturelle">
+      </div>
+      <div class="col-sm-4 d-flex justify-content-around align-items-center title">Titre de l'émission</div>
+      <div class="audio col-sm-2 d-flex justify-content-around align-items-center">
+        <i class="fas fa-fast-backward fa-2x icon" onclick="document.getElementById('lecteur').backward();"></i>
+        <i class="fas fa-play fa-3x icon" onclick="document.getElementById('lecteur').play();"></i>
+        <i class="fas fa-fast-forward fa-2x icon" onclick="document.getElementById('lecteur').forward();"></i>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
 </html>
-
-
-
-
-
-
-     <!-- <nav class="navbar navbar-light d-flex d-flex justify-content-center mb-3">
-            <form class="form-inline">
-              <input class="form-control font-italic " type="search" placeholder="Tell me what you want !">
-              <button class="btn btn-warning" type="submit">Try or die</button>
-            </form>
-          </nav> -->

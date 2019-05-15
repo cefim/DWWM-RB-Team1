@@ -65,7 +65,6 @@ h3:hover {
   border-style: solid;   /* Style de la bordure  */
   border-width: 1px;   /* Epaisseur de la bordure  */
   border-color: rgb(235, 196, 22);   /* Couleur de la bordure  */
-  padding: 5px 10px 5px 10px; /* Espace entre les bords et le contenu : haut droite bas gauche  */ 
   width: 100%;   /* Permet d'ajuster la largeur du bouton à 100% */
   box-sizing: border-box;   /* Important */
   font-size: 13px;   /* Taille de la police du texte */
@@ -73,24 +72,25 @@ h3:hover {
   letter-spacing: 2px;   /* Espacement des caractères */
 }
 
-#space {
-  height: 100px
-}
-
-
 /*BARRE D'ÉCOUTE */
 
 
 footer {
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    bottom: 0px;
     display : table-row;
-    height: 220px; /* à titre d'exemple */
     background-color :black;
+    width: 100vw
 }
 
-.icon {
+.title {
   color: white;
+  font-style: italic;
+  font-size: 20px;
+}
+
+
+.icon {
+  color: rgb(235, 196, 22);
 }
 
