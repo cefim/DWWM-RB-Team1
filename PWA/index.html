@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
   <title>Radio Béton</title>
 </head>
 
@@ -41,15 +42,22 @@
     </div>
     <div class="logo"><img src="img/custom-logo-rb-2.png" style="height:200px;"></div>
 
-    <div class="record"><img src="img/Abbey_Music2.png" class="disc"
-        onmouseover="document.getElementById('audio').play()" onmouseout="document.getElementById('audio').pause()">
+    <div class="record">
+    <audio id="audioPlayer">
+        <source src="http://91.121.159.124:8000/eko-des-garrigues-256k.ogg">
+        <source src="http://91.121.159.124:8000/eko-des-garrigues-128k.mp3">
+    </audio>
+    
+      <img src="img/Abbey_Music2.png" class="disc" onclick="play('audioPlayer', this)">
+   
     </div>
 
 
     <script src="main.js"></script>
+    <script src="audio.js"></script>
 </body>
 
 </html>
-<link rel="stylesheet" href="style.css">
+
 
 <!--<body>-->

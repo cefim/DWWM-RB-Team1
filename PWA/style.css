@@ -1,7 +1,7 @@
 body {
   background: linear-gradient(
     rgba(255, 255, 255, 0.45), 
-    rgba(204, 0, 0)
+    rgba(204, 0, 0, 0.493)
     ),url(img/affiche.jpg);
   background-attachment: fixed;
   display: flex;
@@ -10,7 +10,7 @@ body {
 
   /*Testing Here and Stuff*/
   .menuhamburger{
-    font-size:20px;
+    font-size:30px;
     color:#CC0000;
     cursor:pointer;
 
@@ -104,6 +104,13 @@ body {
     height: 60px;
   }
 
+  button {
+    background: none;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .disc {
     -webkit-transition: all 0.0s ;
     -moz-transition: all 0.0s ;
