@@ -1,48 +1,32 @@
 body {
-    background: radial-gradient(#A2A09D, #302E2D);
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.45), 
+    rgba(204, 0, 0)
+    ),url(img/affiche.jpg);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
   }
-  
-  .screen {
-    position: relative;
-    width: 290px;
-    height: 480px;
-    background: #a0a0a0;
-    border-radius: 4px;
-    background-image: url(https://s24.postimg.org/8r0kzlfjp/rsz_piano2.jpg);
-  }
-  
-  .phone {
-    position: fixed;
-    width: 290px;
-    height: 21px;
-    position: absolute;
-    z-index: 9999;
-    background: /*#4d4d63*/ left center repeat-x scroll;
-  }
-  .phone ul {
-    list-style-type: none;
-    margin: 4px 5px 0 5px;
-    padding: 0;
-    overflow: hidden;
-    font-family: Arial;
-    font-size: 10px;
-  }
-  .phone li {
-    float: left;
-    padding: 1px;
-  }
-  
-  
-  
+
   /*Testing Here and Stuff*/
+  .menuhamburger{
+    font-size:20px;
+    color:#CC0000;
+    cursor:pointer;
+
+  }
   
-  
+  .navoptions{
+    color:#fff;
+    margin-bottom:5px;
+  }
   .left-nav {
-    height: 410px;
-    width: 140px;
+    height: 100%;
+    width: 40%;
     position: fixed;
     left: 0;
-    background-color: #DB3B53;
+    top: 0;
+    background-color: #CC0000;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 70px;
@@ -85,15 +69,18 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 2px;
+    color:#fff;
+    margin-bottom:5px;
+    text-align: center;
   }
   
-  /*@media screen and (max-height: 450px) {
+ @media screen and (max-height: 450px) {
     .left-nav {padding-top: 15px;}
     .left-nav a {font-size: 18px;}
-  }*/
+  }
   
   .record {
-    padding: 22px 35px 0 0;
+    padding: 22px 0 0 0;
   }
   /*.record img{ 
       animation:4.5s rotateRight infinite linear; 
@@ -110,15 +97,22 @@ body {
     -webkit-transform: rotate(720deg);
     transform: rotate(720deg);
   }*/
-  
   img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+  }
+
+  .disc {
     -webkit-transition: all 0.0s ;
     -moz-transition: all 0.0s ;
     -o-transition: all 0.0s ;
     transition: all 0.0s;
+    height: 250px;
   }
   
-  img:hover {
+  .disc:hover {
     -webkit-transform: rotate(2520deg);
     -moz-transform: rotate(2520deg);
     transform: rotate(2520deg);
@@ -181,19 +175,7 @@ body {
   }
   
   /*Progress Bar*/
-  .bar {
-    width: 205px;
-    height: 4px;
-    overflow: hidden;
-    border-radius: 50px;
-    margin: 22px 0 0 0;
-    background: rgba(0, 0, 0, 0.75);
-  }
-  .seeker {
-    float: left;
-    width: 80px;
-    height: 7px;
-    border: 10px solid #DB3B53;
+  
   }
   a[href="#seek"]
   {
@@ -213,20 +195,4 @@ body {
     margin: -13px 0 0 12px;
     font-size: 12px;
   }
-  .duration {
-    font-family: arial;
-    color: #fff;
-    float: right;
-    margin: -13px 12px 0 0;
-    font-size: 12px;
-  }
   
-  .credits {
-    font-size:8px;
-    text-align:right;
-    width:290px;
-    font-family:arial;
-    text-transform:uppercase;
-    letter-spacing:3px;
-    color:#bdbdbd;
-  }
