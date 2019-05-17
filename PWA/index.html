@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google Fonts --> 
+  <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
   <title>Radio Béton</title>
 </head>
 
@@ -21,11 +23,10 @@
           <img src="img/betonlogo.jpg">
         </a>
         <a href="https://www.radiobeton.com/aucard/">
-          <img src="img/aucard-2019-carre-petit.jpg" onmouseover="document.getElementById('audio').play()"
-            onmouseout="document.getElementById('audio').pause()">
+          <img src="img/aucard-2019-carre-petit.jpg" >
         </a>
         <a href="#">
-          <p>site podcasts</p>
+          <p>podcasts</p>
         </a>
         <a href="#">
             <span class="fa fa-facebook"></span>
@@ -52,17 +53,17 @@
 
   <div class="record">
     <audio id="audioPlayer">
-      <source src="http://91.121.159.124:8000/eko-des-garrigues-256k.ogg">
-      <source src="http://91.121.159.124:8000/eko-des-garrigues-128k.mp3">
+      <source src="https://stream.radiobeton.com:8001/stream.mp3">
+     
     </audio>
 
     <img src="img/Abbey_Music2.png" class="disc" onclick="play('audioPlayer', this)">
 
   </div>
 
-
-  <script src="main.js"></script>
-  <script src="audio.js"></script>
+  <script src="/script.js"></script>
+  <script src="/main.js"></script>
+  <script src="/audio.js"></script>
 </body>
 
 </html>
