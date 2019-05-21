@@ -1,7 +1,7 @@
 body {
   background: linear-gradient(
     rgba(255, 255, 255, 0.45), 
-    rgba(204, 0, 0, 0.493)
+    rgba(204, 0, 0, 0.308)
     ),url(img/affiche.jpg);
   background-attachment: fixed;
   display: flex;
@@ -152,7 +152,10 @@ body {
     background : transparent;
   }
   
-  /*Progress Bar*/
+  .deconnection {
+    text-align: center;
+    font-size: 20px
+  }
 
   
 

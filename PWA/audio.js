@@ -1,16 +1,23 @@
 var player = document.querySelector('#audioPlayer');
 
+player.load();
 
 function play(idPlayer, control) {
     var player = document.querySelector('#' + idPlayer);
-    
     if (player.paused) {
+        // player.load();
         player.play();
         control.textContent = 'Pause';
+        console.log('lecture')
     } else {
         player.pause();	
+        player.preload();
         control.textContent = 'Play';
+        console.log('pause')
+
     }
+
+    
 }
 
 // -webkit-transform: rotate(2520deg);
