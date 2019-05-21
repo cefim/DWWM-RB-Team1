@@ -1,29 +1,33 @@
-
-body
-{
-  background-image: url(../img/affiche.jpg);
-  background-attachment: fixed;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-}
+/* ==================================================
+                       Font page
+  ================================================== */
+  body
+  {
+    position: relative;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.4)), url(../img/affiche.jpg);
+    background-attachment: fixed;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    background-size: cover;
+    content: "";
+    display: block;
+    z-index: -2;
+  }
 
 p {
   line-height: 1.55;
   color: #333;
   font-size: 400;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 
 h1 {
   font-size: 62px;
 }
-
+/*
 h2 {
   font-size: 30px;
   margin-bottom: 65px;
 }
-
+*/
 h3 {
   font-size: 24px;
 }
@@ -40,8 +44,9 @@ a {
   transition: 0.5s;
 }
 
+
 /* ==================================================
-  Elements
+               Bandeau noir
   ================================================== */
 
 .btn {
@@ -51,12 +56,18 @@ a {
   color: #fff;
   padding: 15px 45px;
   border-radius: 50px;
+
 }
 
+
 .btn:hover {
-  background-color: rgb(244, 245, 169);
+  background: rgba(245, 38, 38, 0.61);
   color: black;
 }
+
+/* ==================================================
+               Elements
+  ================================================== */
 
 .btn:focus {
   color: #fff;
@@ -114,6 +125,7 @@ a:hover {
   Hero Styling
 ================================================== */
 
+/* bandeau noir*/
 .hero {
   display: table;
   position: relative;
@@ -145,14 +157,13 @@ a:hover {
   width: 100%;
 }
 
-
-
+/* Bandeau menu*/
 .hero-brand:hover {
   opacity: .75;
 }
 
 .tagline {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  /*font-family: "Raleway", Helvetica, Arial, sans-serif;*/
   font-size: 26px;
   margin: 45px 0 75px 0;
   color: #fff;
@@ -163,7 +174,7 @@ a:hover {
 ================================================== */
 
 #header {
-  background: rgb(228, 101, 101);
+  background: rgba(245, 38, 38, 0.61);
   height: 70px;
 }
 
@@ -206,7 +217,11 @@ a:hover {
 #header .social-nav a:hover {
   color: black;
 }
-
+/*
+#header .social-nav a:hover {
+  color: #199EB8;
+}
+*/
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -279,20 +294,29 @@ a:hover {
 /* Nav Meu Styling */
 
 .nav-menu a {
-  padding: 22px 15px 18px 15px;
+  padding: 22px 20px 18px 30px;
   text-decoration: none;
   display: inline-block;
-  color: white;
+  color:black;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 20px;
+  font-weight: bold;
   outline: none;
+}
+
+.social-nav .connexion{
+  color:black;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .nav-menu a:hover,
 .nav-menu li:hover > a,
 .nav-menu .menu-active > a {
-  color: black;
+  color:rgb(235, 196, 22);
 }
 
 .nav-menu ul {
@@ -436,6 +460,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+.social-nav .partage {
+  background-color:  rgba(245, 38, 38, 0.61);
+  padding: 15px 35px;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+.social-nav .partage:hover{
+  background: #199EB8;
+  color: black;
+}
+
 
 /* ==================================================
   Podcast Styling
@@ -449,11 +485,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 .podcast h2 {
   color: #000;
   font-weight: bold;
-  font-size: 2.5em;
-  margin: 5px; 
+  font-size: 3.5em;
+/*  margin: 20px; */
 }
 
-.podcast .col-sm-3 {
+.podcast .col-sm-3 {  /*a voir*/
   padding: 0;
 }
 
@@ -466,16 +502,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .podcast .card h4 {
-  color: #fff;
+  color: black;
   text-transform: uppercase;
 }
 
-.podcast .card p {
+.podcast .podcast-over p {
   font-size: 11px;
-  color: #fff;
+  color: white;
+  font-size: 15px;
   opacity: .75;
   margin: 0;
-  padding: 0 35px;
+}
+
+.podcast .emission p {
+  font-size: 11px;
+  color: black;
+  font-size: 15px;
+  opacity: .75;
+  margin: 0;
 }
 
 .podcast .card .social-nav {
@@ -491,6 +535,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .podcast .card .social-nav a:hover {
   opacity: .75;
 }
+
 
 .podcast .card:hover .podcast-over {
   opacity: 1;
@@ -511,10 +556,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.884);
   top: 0;
   left: 0;
-  text-align: center;
+  /*text-align: center;*/
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -524,7 +569,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 15px 25px;
   position: relative;
   z-index: 9;
-  background-color: #fff;
+  
+}
+.card{
+  background-color: rgba(255, 255, 255, 0.562);
 }
 
 .podcast .card-title-wrap .card-title,
@@ -535,44 +583,41 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .podcast .card-title-wrap .card-title {
-  font-size: 24px;
+  font-size: 17px;
+  font-weight: bold;
   color: #333;
 }
 
-.podcast .card-title-wrap .card-text {
+.podcast .card-title-wrap  {
   font-size: 13px;
   color: #999;
 }
 
-
-/* ==================================================
-  Moteur de recherche
-  ================================================== */
-
-
-#searchthis #search {
-  background-color: rgba(255, 255, 255, 0.8); /* Couleur de fond */
-  width : 80vw;
-  height: 40px;
-  border-style: solid;   /* Style de la bordure  */
-  border-width: 1px;   /* Epaisseur de la bordure  */
-  border-color: rgb(235, 196, 22);   /* Couleur de la bordure  */
-  text-align: center;
-  font-style: italic;
+.podcast .card-text {
+  font-size: 11px;
+  color: #333;
 }
 
-#searchthis #search-btn {
-  background-color:  rgb(235, 196, 22);   /* Couleur de fond */
-  border-style: solid;   /* Style de la bordure  */
-  border-width: 1px;   /* Epaisseur de la bordure  */
-  border-color: rgb(235, 196, 22);   /* Couleur de la bordure  */
-  width: 100%;   /* Permet d'ajuster la largeur du bouton à 100% */
-  box-sizing: border-box;   /* Important */
-  font-size: 13px;   /* Taille de la police du texte */
-  font-weight: normal;   /* Graisse du texte : normal = normal ; bold = gras */
-  letter-spacing: 2px;   /* Espacement des caractères */
+.media .nom{
+  font-size: 25px;
+  font-weight: bold;
 }
 
+.list-inline-item .fa-play-circle{
+  color:  rgb(235, 196, 22);
+}
+
+.fa-pause-circle{
+  color: rgb(235, 196, 22);
+}
+
+.fa-pause-circle:hover{
+  color: black;
+}
+
+.ecoute{
+  color: black;
+}
 
 /* ==================================================
   Contact Section
@@ -585,6 +630,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact h2 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   color: rgb(231, 109, 109);
+  font-weight: bold;
+  font-size: 45px;
 }
 
 #contact .info i {
@@ -641,7 +688,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .form button[type="submit"] {
   background: #199EB8;
   border: 0;
-  padding: 10px 24px;
+ /* padding: 10px 24px;*/
   color: #fff;
   transition: 0.4s;
 }
@@ -651,7 +698,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /* ==================================================
-  Footer Styling
+       Bandeau Footer Styling
   ================================================== */
 
 .site-footer {
@@ -716,14 +763,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #199EB8;
 }
 
-.icon {
-  color: rgb(235, 196, 22);
-}
-
-.audio_credits {
-  color: white;
-}
-
 /* ==================================================
   Responsive Styling
   ================================================== */
@@ -766,7 +805,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   section,
   .block,
   .cta {
-    padding: 35px 0;
+  padding: 35px 0;
   }
 
   .features {
@@ -842,7 +881,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .site-footer .list-inline {
-    text-align: center;
+/*    text-align: center;*/
     padding-bottom: 15px;
   }
 
@@ -851,11 +890,33 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-.list-inline-item
+.list-inline-item 
 {
-  color: yellow;
+  color: rgb(235, 196, 22);
   margin-left: 15px;
 }
 
+/*BARRE DE RECHERCHE */
+  
+#searchthis #search {
+  background-color: rgba(255, 255, 255, 0.8); /* Couleur de fond */
+  width : 80vw;
+  height: 40px;
+  border-style: solid;   /* Style de la bordure  */
+  border-width: 1px;   /* Epaisseur de la bordure  */
+  border-color: rgb(235, 196, 22);   /* Couleur de la bordure  */
+  text-align: center;
+  font-style: italic;
+}
 
-
+#searchthis #search-btn {
+  background-color:  rgb(235, 196, 22);   /* Couleur de fond */
+  border-style: solid;   /* Style de la bordure  */
+  border-width: 1px;   /* Epaisseur de la bordure  */
+  border-color: rgb(235, 196, 22);   /* Couleur de la bordure  */
+  width: 100%;   /* Permet d'ajuster la largeur du bouton à 100% */
+  box-sizing: border-box;   /* Important */
+  font-size: 13px;   /* Taille de la police du texte */
+  font-weight: normal;   /* Graisse du texte : normal = normal ; bold = gras */
+  letter-spacing: 2px;   /* Espacement des caractères */
+}
