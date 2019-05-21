@@ -14,6 +14,7 @@ const FILES_TO_CACHE = [
     "main.js",
     "script.js",
     "style.css",
+    "install.js",
     "img/Abbey_Music2.png",
     "img/affiche.jpg",
     "img/aucard-2019-carre-petit.jpg",
