@@ -35,7 +35,7 @@ function custom_post_type() {
     'parent_item_colon'   => __( 'Parent Podcast:', 'text_domain' ),
     'all_items'           => __( 'Tous les Podcasts', 'text_domain' ),
     'view_item'           => __( 'View Podcast', 'text_domain' ),
-    'add_new_item'        => __( 'Add New Podcast', 'text_domain' ),
+    'add_new_item'        => __( 'Ajouter un nouveau Podcast', 'text_domain' ),
     'add_new'             => __( 'Ajouter', 'text_domain' ),
     'edit_item'           => __( 'Edit Podcast', 'text_domain' ),
     'update_item'         => __( 'Update Podcast', 'text_domain' ),
