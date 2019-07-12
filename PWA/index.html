@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -14,12 +14,12 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
   <!-- CODELAB: Add link rel manifest -->
   <link rel="manifest" href="manifest.json">
-  <!-- CODELAB: Add iOS meta tags and icons -->
+  <!--  iOS meta tags and icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Weather PWA">
-  <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
-  <!-- CODELAB: Add description here -->
+  <meta name="apple-mobile-web-app-title" content="RadioBeton">
+  <link rel="apple-touch-icon" href="/img/logo152.png">
+  <!-- Add description here -->
   <meta name="description" content="Radio Béton sur le Web">
   <!-- CODELAB: Add meta theme-color -->
   <meta name="theme-color" content="#e8e8e8" />
@@ -52,34 +52,41 @@
             <span class="fa fa-twitter"></span>
             <p></p>
           </a>
-          <a href="#" <a href="#" aria-label="Quitter"></a>>
-          <p>exit</p>
+          <a href="#" aria-label="Quitter"></a>
+          <p class="exit">exit</p>
           </a>
 
         </div>
       </div>
     </div>
   </nav>
+      <!--Page-->
+  <div class="page">
   <header>
     <div id="main">
       <span class="menuhamburger" onclick="openNav()">&#9776;</span>
-    </div>
     </div>
     <div class="logo"><img src="img/custom-logo-rb-2.png" style="height:200px;" alt="logo radio beton"></div>
   </header>
 
   <main>
-    <div class="record">
+    <div class="record" onclick="play('audioPlayer', this)" >
       <audio id="audioPlayer">
         <source src="https://stream.radiobeton.com:8001/stream.mp3">
       </audio>
-
-      <img src="img/Abbey_Music2.png" class="disc" onclick="play('audioPlayer', this)" alt="image disque qui tourne">
-
+    
+      <img src="img/Abbey_Music2.png" class="disc"  alt="image disque qui tourne">
+      <span class ="control" id="modelec" ><i class="fa fa-play" id="icon"></i></span>
+     
+   
     </div>
   </main>
- <button id="butInstall" aria-label="Install" hidden>Installer un lien</button> 
+  <footer>
+ 
 
+    <button class="install" id="butInstall" aria-label="Install" hidden>Installer un lien</button> 
+  </footer>
+</div>
   <script src="script.js"></script>
   <script src="main.js"></script>
   <script src="audio.js"></script>

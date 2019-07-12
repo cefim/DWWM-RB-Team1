@@ -18,14 +18,3 @@ if ('serviceWorker' in navigator) {
     // Le site devrait continuer à
     // fonctionner normalement.
   };
-//   if ('serviceWorker' in navigator) {
-//     navigator.serviceWorker
-// .register('/sw-test/sw.js', { scope: '/sw-test/' })
-// .then(function(reg) {
-//       // registration worked
-//       console.log('Registration succeeded. Scope is ' + reg.scope);
-//     }).catch(function(error) {
-//       // registration failed
-//       console.log('Registration failed with ' + error);
-//     });
-//   };
