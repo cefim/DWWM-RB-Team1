@@ -11,29 +11,23 @@ function play(idPlayer, control) {
     }
 }
 
-function playPodcast(idPlayer, control /*, podcastMp3, podcastTitre, podcastID */) {
+function playPodcast(idPlayer, control) {
     var player = document.querySelector('#' + idPlayer);
     var bouton = document.getElementById('controlPodcastLec');
-    var bouton2 = document.getElementById('controlAudioLec');
-/* var titrePodcast = document.getElementById('PodcastPlaying');
+    var titrePodcast = document.getElementById('PodcastPlaying');
 
-if (titrePodcast.innerHtml != podcastTitle) {
-    player.currentTime=0;
-}
-Modifier la source lecture du player pour lire le podcast selectionné.
+// Modifier la source lecture du player pour lire le podcast selectionné.
 
-player.innerHTML = '<source scr="'+ podcastmp3 + '"></source>';
-envoyer le nom du podcast au lecteur
-titrePodcast.innerHTML = podcastTitre; */
+    // player.innerHTML = '<source scr="'+ + '"></source>'
+// envoyer le nom du podcast au lecteur
+    // titrePodcast.innerHTML = ...
 
     if (player.paused) {
         player.play();
         bouton.innerHTML = '<i class="fa fa-pause-circle fa-5x" aria-hidden="true"></i>';
-        bouton2.innerHTML = '<i class="fa fa-pause fa-2x" aria-hidden="true"></i>';
     } else {
         player.pause();
         bouton.innerHTML = '<i class="fa fa-play-circle fa-5x" aria-hidden="true"></i>';
-        bouton2.innerHTML = '<i class="fa fa-pause fa-2x" aria-hidden="true"></i>';
     }
 }
 
